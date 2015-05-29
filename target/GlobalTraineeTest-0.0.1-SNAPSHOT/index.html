@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+</head>
+<body>
+	<form method="POST" action="SimpleServlet" enctype="multipart/form-data" >
+		Your File: <input type="file" accept=".txt" name="inputFile">
+		<br> Word To Find: <input name="q" > <br> Max String
+		Characters: <input name="length" value="0"> <br> Max Overall
+		Characters: <input name="limit" value="0"> <br> Include MetaData? <input
+			type="radio" name="metaData" value="true" >Yes <input
+			type="radio" name="metaData" value="false" checked="checked">No <br> <input
+			type="submit" value="Find!">
+	</form>
+</body>
+</html>

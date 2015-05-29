@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+
+<style>
+</style>
+</head>
+<body>
+
+	<div style="padding-top: 50px" class="div">
+		<div style="margin: auto; width: 70%;">
+			<form method="POST" action="SimpleServlet"
+				enctype="multipart/form-data">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Choose
+						Text File</span> <input  type="file" class="form-control"
+						placeholder="Username" aria-describedby="basic-addon1"
+						accept=".txt" name="inputFile" id="inputFile">
+				</div>
+				<p>
+				<div class="input-group">
+					<input name="q" id="q" type="text" class="form-control"
+						placeholder="Word To Find" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="basic-addon2">Word To
+						Find</span>
+				</div>
+				<p>
+				<div class="input-group">
+					<input name="limit" id="limit" type="text" class="form-control"
+						placeholder="Max String Characters"
+						aria-describedby="basic-addon2" value="0"> <span
+						class="input-group-addon" id="basic-addon2">Max String
+						Characters</span>
+				</div>
+				<p>
+				<div class="input-group">
+					<input name="length" id="length" type="text" class="form-control"
+						placeholder="Max Overall Characters"
+						aria-describedby="basic-addon2" value="0"> <span
+						class="input-group-addon" id="basic-addon2">Max Overall
+						Characters</span>
+					<p>
+				</div>
+				<div style="margin-top: 20px" align="center">
+				<p>
+					Include MetaData?
+					<p>
+						<input type="radio" name="metaData" value="true">Yes <input
+							type="radio" name="metaData" value="false" checked="checked">No
+					
+					<p>
+						<input class="btn btn-lg" type= "submit" value="Find!">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
